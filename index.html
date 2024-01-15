@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock | Paper | Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="main">
+
+  <div class="top">
+<img src="logo.svg" alt="">
+     <div class="score"><h5 style="color:rgb(2, 19, 255);">Score</h5><h1 id="score_value">0</h1></div>
+  </div>
+  <div id="three">
+    <img src="bg-triangle.svg" alt="" style="position:absolute;z-index:1;margin-top:30px;margin-left:10px;">
+    <div id="two"><img src="Paper.png" alt="Paper" id='1' onclick="show(event)" class="Paper"><img src="Scissor.png"  id='2' onclick="show(event)"></div>
+    <div id="one"><img src="Rock.png" alt="" id='3' onclick="show(event)"></div>
+  </div>
+  <div id="final">
+    <div id="choice">
+      
+      <div id="user"><h2>You Picked</h2><img src="" alt="" id="User_choice"></div>
+     
+      <div id="result">
+        
+      </div>
+      <div id="house"><h2>The House Picked</h2><h2 id="loader"></h2><img src="" alt="" id="house_choice"></div>
+    </div>
+  </div>
+  <button id="Rules" onclick="popup_on()">Rules</button>
+  </div>
+ <div id="black" >
+<div id="popup"><h3>Rules</h3><img src="image-rules.svg" alt=""><button onclick="popup_off()">close</button></div>
+ </div>
+ 
+</body>
+</html>
